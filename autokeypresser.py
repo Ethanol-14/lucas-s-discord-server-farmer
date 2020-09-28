@@ -51,11 +51,6 @@ while True:
     #moves back to original position
     mouse.position = prempos
 
-    #clicks left click
-    mouse.press(Button.left)
-    time.sleep(typedelay)
-    mouse.release(Button.left)
-
     loop = typetime
     while loop > 0:
         time.sleep(1)
