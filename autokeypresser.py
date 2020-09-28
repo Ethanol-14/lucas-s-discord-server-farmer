@@ -26,6 +26,9 @@ while True:
     mouse.press(Button.left)
     time.sleep(typedelay)
     mouse.release(Button.left)
+    
+    #moves back to original position
+    mouse.position = prempos
 
     #holds then releases key
     for char in whattotype:
@@ -47,9 +50,6 @@ while True:
     keyboard.release(Key.enter)
     time.sleep(typedelay)
     print("hit enter")
-
-    #moves back to original position
-    mouse.position = prempos
 
     loop = typetime
     while loop > 0:
